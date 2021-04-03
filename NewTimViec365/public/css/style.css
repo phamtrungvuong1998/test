@@ -118,7 +118,7 @@
 
 #content-3{
 	background-image: url("../img/Rectangle480.png");
-	height: 370px;
+	background-size: auto 400px;
 	background-repeat: no-repeat;
 }
 
@@ -155,9 +155,13 @@
 
 /*End: cotent-3;*/
 
+#content-4-mb{
+	display: none;
+}
+
 #content-4{
 	background-image: url("../img/Rectangle481.png");
-	height: 370px;
+	background-size: auto 370px;
 	background-repeat: no-repeat;
 }
 
@@ -192,7 +196,8 @@
 
 #content-5{
 	background-image: url("../img/Rectangle 482.png");
-	height: 370px;
+	background-size: auto 400px;
+	background-repeat: no-repeat;
 }
 
 #content-5-1{
@@ -243,7 +248,8 @@
 
 #footer-contact{
 	background: linear-gradient(225.02deg, #366593 24.99%, #072541 134.14%);
-	height: 295px;
+	background-size: auto 295px;
+	background-repeat: no-repeat;
 }
 
 #footer-contact > div{

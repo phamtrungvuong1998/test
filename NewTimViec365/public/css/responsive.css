@@ -26,6 +26,10 @@
 }
 
 @media (max-width: 768px){
+	.flex{
+		display: block;
+	}
+
 	.content-1-mobile{
 		display: none;
 	}
@@ -36,35 +40,68 @@
 
 	#content-3{
 		display: block;
-		background-clip: 1000px;
+		background-size: auto 1000px;
+	}
+
+	#content-3-2{
+		margin-bottom: -15px;
 	}
 
 	#content-3-btn{
 		margin: 25%;
 	}
 
-	#content-3-2{
+	#content-4{
 		display: none;
+		background-size: 1000px;
 	}
 
-	#content-4{
+	#content-4-mb{
 		display: block;
+	}
+
+	#content-4-2{
+		clear: right;
+	}
+
+	#content-4-2 button{
+		margin-right: 30%;
 	}
 
 	#content-4-1{
-		display: none;
+		margin-left: 15%;
+		margin-top: 20%;
 	}
-
-	#content-4-btn{
-		margin-right: 25%;
-	}
-
 
 	#content-5{
 		display: block;
+		background-size: auto 1000px;
 	}
 
-	#content-5-2{
-		display: none;
+	#content-5-1{
+		text-align: center;
+	}
+
+	#content-5-1 h2{
+		margin-left: -10%;
+	}
+	#content5-2{
+		margin-right: 0px;
+		margin-top: auto;
+	}
+
+	#footer-contact{
+		background: linear-gradient(225.02deg, #366593 24.99%, #072541 134.14%);
+		background-size: auto 1100px;
+		background-repeat: no-repeat;
+		margin-top: -7%;
+	}
+
+	#footer-contact > div{
+		padding-top: 20px;
+	}
+
+	.app{
+		padding-bottom: 10px;
 	}
 }
