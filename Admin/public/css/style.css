@@ -100,7 +100,43 @@ textarea{
 
 #footer-cotact{
     margin-left: 0;
+    margin-bottom: 0;
     margin-top: 47px;
     background: #2767A5;
-    background-size: 70px;
+    background-size: auto auto;
 }
+
+#footer-cotact ul li{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+#last-footer{
+    margin-top: -18px;
+    background-image: url("../img/6.png");
+    background-size: auto autoF;
+}
+
+#last-footer h3{
+    color: white;
+}
+
+.flex-footer{
+    margin-bottom: 10px;
+}
+
+.footer-text{
+    color: white;
+    margin-left: 2%;
+}
+
+.app{
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 50%;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
