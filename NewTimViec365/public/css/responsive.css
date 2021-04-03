@@ -38,6 +38,10 @@
 		display: block;
 	}
 
+	.flex-mb{
+		display: flex;
+	}
+
 	#content-3{
 		display: block;
 		background-size: auto 1000px;
