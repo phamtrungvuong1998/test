@@ -1,0 +1,94 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background: #E5E5E5;
+}
+
+.font-all{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.header-icon{
+    flex: 1;
+}
+
+#header-mb{
+    background: #FFFFFF;
+    background-size: auto 153px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+}
+
+#content{
+    background: #FFFFFF;
+    background-size: auto auto;
+    margin-top: 16px;
+}
+
+#content > form{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 11px;
+}
+
+.content-title{
+    display: flex;
+}
+
+.content-tilte h3{
+    color: #2268A7;
+    font-size: 18px;
+}
+
+.content-tilte b b{
+    color: red;
+}
+
+.content-tilte p,center{
+    font-size: 15px;
+}
+
+.content-tilte input,select,textarea{
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea{
+    height: 260px;
+}
+
+.content-tilte button{
+    width: 35%;
+    border-radius: 5px;
+    height: 40px;
+}
+
+#dangtin{
+    background: linear-gradient(90deg, #3797DD 0%, #72C3FF 106.9%);
+    border-color: #2268A7;
+    color: white;
+}
+
+#huytaotin{
+    background: white;
+    border-color: #2268A7;
+    color:#2268A7;
+}
+
+#sup-m{
+    background: #FFFFFF;
+    background-size: 200px;
+    margin-top: 80px;
+}
+
+#footer-cotact{
+    margin-left: 0;
+    margin-top: 47px;
+    background: #2767A5;
+    background-size: 70px;
+}

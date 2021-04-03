@@ -1,0 +1,43 @@
+@media (min-width: 768px){
+    .flex-big{
+        display: flex;
+    }
+
+    .flex-big >div{
+        flex: 1;
+    }
+
+    .flex-big input{
+        height: 40px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .content-tilte select{
+        height: 46px;
+        border-radius: 5px;
+        width: 101%;
+    }
+
+    .line{
+        margin-right: 4%;
+    }
+
+    #date{
+        width: 50%;
+    }
+
+    #sdt{
+        display: none;
+    }
+}
+
+@media (min-width: 1025px){
+    #sup-m{
+        display: none;
+    }
+
+    #header-mb{
+        display: none;
+    }
+}
