@@ -37,7 +37,64 @@
         display: none;
     }
 
+    #sidebar{
+        display: block;
+        background: linear-gradient(180deg, #2FA7FF 0%, #0C75C4 88.54%, #2268A7 100%);
+
+    }
+
+    #logo1{
+        background: linear-gradient(180deg, #2FA7FF 27.08%, #3493E8 100%);
+        height: 61px;
+    }
+
+
     #header-mb{
         display: none;
+    }
+
+    .action{
+        margin-bottom: 21px;
+    }
+
+    .action-list{
+        color: white;
+    }
+
+    #lochoso{
+        background: #E4EFF8;
+        height: 36px;
+        border: 1px solid 202,232,255,1;
+        border-radius: 20px;
+        color: #2268A7;
+    }
+
+    .header-action{
+        font-weight: bold;
+    }
+
+    
+    #first-header{
+        display: flex;
+    }
+    
+    #sup-pc{
+        display: flex;
+    }
+
+    #sup-pc{
+        background: #FFFFFF;
+        height: 52px;
+        margin-top: 45px;
+        margin-bottom: 40px;
+    }
+
+    #sup-pc >div img{
+        margin-top: -20px;
+    }
+    
+    #content-right{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

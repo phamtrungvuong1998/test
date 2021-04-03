@@ -4,6 +4,10 @@ body{
     background: #E5E5E5;
 }
 
+#sidebar{
+    display: none;
+}
+
 .font-all{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,6 +25,14 @@ body{
     background-size: auto 153px;
     padding-top: 20px;
     padding-bottom: 13px;
+}
+
+#first-header{
+    display: none;
+}
+
+#sup-pc{
+    display: none;
 }
 
 #content{
