@@ -97,16 +97,19 @@
                             <h3 class="font-all">Thông tin việc làm <img src="./public/img/Line 37.png" alt=""></h3>
                             <div>
                                 <b><p class="font-all"><b>*</b> Vị trí đang tuyển</p></b>
-                                <input type="text">
+                                <i class="thongbao"></i>
+                                <input type="text" id="vitridangtuyen" placeholder="VD: Nhân viên kinh doanh, nhân viên hành chính nhân sự" required>
                             </div>
                             <div>
                                 <b><p class="font-all"><b>*</b> Ngành nghề</p></b>
+                                <i class="thongbao"></i>
                                 <select name="" id="">
                                     <option value="">1</option>
                                 </select>
                             </div>
                             <div>
                                 <b><p class="font-all"><b>*</b> Địa điểm làm việc</p></b>
+                                <i class="thongbao"></i>
                                 <select name="" id="">
                                     <option value="">1</option>
                                 </select>
@@ -115,18 +118,21 @@
                                 <div class="line">
                                     <div>
                                         <b><p class="font-all"><b>*</b> Hình thức làm việc</p></b>
+                                        <i class="thongbao"></i>
                                         <select name="" id="">
                                             <option value="">1</option>
                                         </select>
                                     </div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Cấp bậc</p></b>
+                                        <i class="thongbao"></i>
                                         <select name="" id="">
                                             <option value="">1</option>
                                         </select>
                                     </div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Mức lương</p></b>
+                                        <i class="thongbao"></i>
                                         <select name="" id="">
                                             <option value="">1</option>
                                         </select>   
@@ -135,15 +141,18 @@
                                 <div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Số lượng cần tuyển</p></b>
-                                        <input type="text">
+                                        <i class="thongbao"></i>
+                                        <input type="text" id="soluongcantuyen" placeholder="Nhập số lượng" required>
                                     </div>
                                     <div>
-                                        <b><p class="font-all"><b>*</b> Hoa hồng (nếu có)</p></b>
-                                        <input type="text">
+                                        <b><p class="font-all"> Hoa hồng (nếu có)</p></b>
+                                        <i class="thongbao"></i>
+                                        <input type="text" id="hoahong" placeholder="VD: Từ 12 đến 15%" required>
                                     </div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Thời gian thử việc</p></b>
-                                        <input type="text">
+                                        <i class="thongbao"></i>
+                                        <input type="text" id="thoigianthuviec" placeholder="VD: 1 tuần hoặc 1 tháng" required>
                                     </div>
                                 </div>
                             </div>
@@ -152,12 +161,14 @@
                         <div>
                             <h3 class="font-all">Mô tả công việc <img src="./public/img/Line 37.png" alt=""></h3>
                             <b><p class="font-all"><b>*</b> Mô tả công việc</p></b>
-                            <textarea></textarea>
+                            <i class="thongbao"></i>
+                            <textarea id="mota" required></textarea>
                         </div>
                         <div>
                             <h3 class="font-all">Yêu cầu công việc <img src="./public/img/Line 37.png" alt=""></h3>
                             <div>
                                 <b><p class="font-all"><b>*</b> Số năm kinh nghiệm</p></b>
+                                <i class="thongbao"></i>
                                 <select name="" id="">
                                     <option value="">1</option>
                                 </select>   
@@ -165,12 +176,14 @@
                             <div class="flex-big">
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Yêu cầu bằng cấp</p></b>
+                                    <i class="thongbao"></i>
                                     <select name="" id="">
                                         <option value="">1</option>
                                     </select> 
                                 </div>
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Yêu cầu giới tính</p></b>
+                                    <i class="thongbao"></i>
                                     <select name="" id="">
                                         <option value="">1</option>
                                     </select>
@@ -178,35 +191,43 @@
                             </div>
                             <div>
                                 <b><p class="font-all"><b>*</b> Yêu cầu công việc</p></b>
-                                <textarea></textarea> 
+                                <i class="thongbao"></i>
+                                <textarea id="yeucaucongviec" required></textarea> 
                             </div>
                         </div>
                         <div>
                             <h3 class="font-all">Quyền lợi được hưởng <img src="./public/img/Line 37.png" alt=""></h3>
                             <b><p class="font-all"><b>*</b> Quyền lợi được hưởng</p></b>
-                            <textarea></textarea>
+                            <i class="thongbao"></i>
+                            <textarea id="quyenloiduochuong" required></textarea>
                         </div>
                         <div>
                             <h3 class="font-all">Yêu cầu hồ sơ <img src="./public/img/Line 37.png" alt=""></h3>
                             <b><p class="font-all"><b>*</b> Hồ sơ bao gồm</p></b>
-                            <textarea></textarea>
+                            <i class="thongbao"></i>
+                            <textarea id="hosobaogom" required></textarea>
                             <b><p class="font-all"><b>*</b> Hạn nộp hồ sơ</p></b>
-                            <input id="date" type="date">
+                            <i class="thongbao"></i>
+                            <input id="date" type="date" required>
                         </div>
                         <div>
                             <h3 class="font-all">Thông tin liên hệ <img src="./public/img/Line 37.png" alt=""></h3>
                             <div class="flex-big">
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Tên người liên hệ</p></b>
-                                    <input type="text">
+                                    <i class="thongbao"></i>
+                                    <input type="text" id="tennguoilienhe" required>
                                     <b><p class="font-all"><b>*</b> Địa chỉ liên hệ</p></b>
-                                    <input type="text">
+                                    <i class="thongbao"></i>
+                                    <input type="text" id="diachilienhe" required>
                                 </div>
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Số điện thoại liên hệ</p></b>
-                                    <input type="text">
+                                    <i class="thongbao"></i>
+                                    <input type="text" id="sodienthoailienhe" required>
                                     <b><p class="font-all"><b>*</b> Email liên hệ</p></b>
-                                    <input type="text">
+                                    <i class="thongbao"></i>
+                                    <input type="text" id="emaillienhe" required>
                                 </div>
                             </div>
                         </div>
