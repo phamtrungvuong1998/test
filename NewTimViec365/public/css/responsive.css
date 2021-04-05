@@ -23,6 +23,13 @@
 		font-family: Arial;
 		font-size: 14px;
 	}
+
+	#flex-tb{
+		display: none;
+	}
+	#flex-pc{
+		display: block;
+	}
 }
 
 @media (max-width: 768px){
@@ -101,11 +108,32 @@
 		margin-top: -7%;
 	}
 
-	#footer-contact > div{
-		padding-top: 20px;
+	#footer-contact > div > div > h2{
+		padding-top: 30px;
 	}
 
 	.app{
 		padding-bottom: 10px;
+	}
+
+	#flex-tb{
+		display: none;
+	}
+
+	.flex-m{
+		display: flex;
+	}
+
+	.img-con-6{
+		width: 43px;
+		flex: 1;
+	}
+
+	.flex-m p{
+		flex: 3;
+	}
+
+	.mb{
+		margin-top: 40px;
 	}
 }

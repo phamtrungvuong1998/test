@@ -248,8 +248,9 @@
 
 #footer-contact{
 	background: linear-gradient(225.02deg, #366593 24.99%, #072541 134.14%);
-	background-size: auto 295px;
+	background-size: auto auto;
 	background-repeat: no-repeat;
+	/* margin-top: -4%; */
 }
 
 #footer-contact > div{
@@ -282,4 +283,8 @@
 	background: #FFFFFF;
 	margin-top: 10px;
 	color: #0D4778;
+}
+
+#flex-pc{
+	display: none;
 }
