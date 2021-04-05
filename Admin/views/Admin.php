@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/responsive.css">
+    <script src="./public/js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -77,40 +78,40 @@
                         <div class="header-action font-all">Đăng tin</div>
                         <div class="header-action font-all" style="flex: 2;">Tìm kiếm ứng viên</div>
                         <div class="header-action font-all" style="flex: 0.7;"><img src="./public/img/Alert.png" alt=""></div>
-                        <div class="header-action font-all">Đăng xuất</div>
+                        <div class="header-action font-all"><button style="background: #3797DD; border-color: #3797DD;"><a href="http://localhost/Admin/index.php?mod=Auth&act=logout" style="color: white; text-decoration: none;">Đăng xuất</a></button></div>
                     </div>
                 </div>
             </div>
             <div id="sup-pc" class="flex-big">
                 <div style="flex: 0.4;"><img src="./public/img/sup.png" alt=""></div>
-                <div style="flex: 1.5;">Chuyên viên hỗ trợ: Ms.Mai Hương</div>
-                <div>SĐT: 0904646975</div>
-                <div>Zalo: 0904646975</div>
-                <div style="flex: 2;">Email: huongmai.timviec365@gmail.com</div>
+                <div style="flex: 1.5;">Chuyên viên hỗ trợ: <a href="" class="sup-m">Ms.Mai Hương</a></div>
+                <div>SĐT: <a href="" class="sup-m">0904646975</a></div>
+                <div>Zalo: <a href="" class="sup-m">0904646975</a></div>
+                <div style="flex: 2;">Email: <a href="" id="sup-h">huongmai.timviec365@gmail.com</a></div>
             </div>
             <div id="content" style="flex: 4;">
                 <div></div>
-                <form action="" onsubmit="myFunction()">
+                <form action="http://localhost/Admin/index.php?mod=Admin&act=getList" method="post">
                     <div class="content-tilte">
                         <div>
                             <h3 class="font-all">Thông tin việc làm <img src="./public/img/Line 37.png" alt=""></h3>
                             <div>
                                 <b><p class="font-all"><b>*</b> Vị trí đang tuyển</p></b>
-                                <i class="thongbao">fdád</i>
-                                <input type="text" id="vitridangtuyen" placeholder="VD: Nhân viên kinh doanh, nhân viên hành chính nhân sự" required>
+                                <i id="thongbaovitridangtuyen"></i>
+                                <input name="vitridangtuyen" onblur="validationvitridangtuyen()" type="text" id="vitridangtuyen" placeholder="VD: Nhân viên kinh doanh, nhân viên hành chính nhân sự" required>
                             </div>
                             <div>
                                 <b><p class="font-all"><b>*</b> Ngành nghề</p></b>
                                 <i class="thongbao"></i>
-                                <select name="" id="">
-                                    <option value="">1</option>
+                                <select name="nganhnghe" id="">
+                                    <option value="1">1</option>
                                 </select>
                             </div>
                             <div>
                                 <b><p class="font-all"><b>*</b> Địa điểm làm việc</p></b>
                                 <i class="thongbao"></i>
-                                <select name="" id="">
-                                    <option value="">1</option>
+                                <select name="diadiemlamviec" id="">
+                                    <option value="1">1</option>
                                 </select>
                             </div>
                             <div class="flex-big">
@@ -118,40 +119,40 @@
                                     <div>
                                         <b><p class="font-all"><b>*</b> Hình thức làm việc</p></b>
                                         <i class="thongbao"></i>
-                                        <select name="" id="">
-                                            <option value="">1</option>
+                                        <select name="hinhthuclamviec" id="">
+                                            <option value="1">1</option>
                                         </select>
                                     </div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Cấp bậc</p></b>
                                         <i class="thongbao"></i>
-                                        <select name="" id="">
-                                            <option value="">1</option>
+                                        <select name="capbac" id="">
+                                            <option value="1">1</option>
                                         </select>
                                     </div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Mức lương</p></b>
                                         <i class="thongbao"></i>
-                                        <select name="" id="">
-                                            <option value="">1</option>
+                                        <select name="mucluong" id="">
+                                            <option value="1">1</option>
                                         </select>   
                                     </div>
                                 </div>
                                 <div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Số lượng cần tuyển</p></b>
-                                        <i class="thongbao"></i>
-                                        <input type="text" id="soluongcantuyen" placeholder="Nhập số lượng" required>
+                                        <i id="thongbaosoluongcantuyen"></i>
+                                        <input name="soluongcantuyen" onblur="validationsoluongcantuyen()" type="text" id="soluongcantuyen" placeholder="Nhập số lượng" required>
                                     </div>
                                     <div>
                                         <b><p class="font-all"> Hoa hồng (nếu có)</p></b>
                                         <i class="thongbao"></i>
-                                        <input type="text" id="hoahong" placeholder="VD: Từ 12 đến 15%" required>
+                                        <input name="hoahong" onblur="validation()" type="text" id="hoahong" placeholder="VD: Từ 12 đến 15%">
                                     </div>
                                     <div>
                                         <b><p class="font-all"><b>*</b> Thời gian thử việc</p></b>
-                                        <i class="thongbao"></i>
-                                        <input type="text" id="thoigianthuviec" placeholder="VD: 1 tuần hoặc 1 tháng" required>
+                                        <i id="thongbaothoigianthuviec"></i>
+                                        <input name="thoigianthuviec" onblur="validationthoigianthuviec()" type="text" id="thoigianthuviec" placeholder="VD: 1 tuần hoặc 1 tháng" required>
                                     </div>
                                 </div>
                             </div>
@@ -160,73 +161,73 @@
                         <div>
                             <h3 class="font-all">Mô tả công việc <img src="./public/img/Line 37.png" alt=""></h3>
                             <b><p class="font-all"><b>*</b> Mô tả công việc</p></b>
-                            <i class="thongbao"></i>
-                            <textarea id="mota" required></textarea>
+                            <i id="thongbaomota"></i>
+                            <textarea name="mota" id="mota" onblur="validationmota()" required></textarea>
                         </div>
                         <div>
                             <h3 class="font-all">Yêu cầu công việc <img src="./public/img/Line 37.png" alt=""></h3>
                             <div>
                                 <b><p class="font-all"><b>*</b> Số năm kinh nghiệm</p></b>
                                 <i class="thongbao"></i>
-                                <select name="" id="">
-                                    <option value="">1</option>
+                                <select name="sonamkinhnghiem" id="">
+                                    <option value="1">1</option>
                                 </select>   
                             </div>
                             <div class="flex-big">
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Yêu cầu bằng cấp</p></b>
                                     <i class="thongbao"></i>
-                                    <select name="" id="">
-                                        <option value="">1</option>
+                                    <select name="yeucaubangcap" id="">
+                                        <option value="1">1</option>
                                     </select> 
                                 </div>
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Yêu cầu giới tính</p></b>
                                     <i class="thongbao"></i>
-                                    <select name="" id="">
-                                        <option value="">1</option>
+                                    <select name="yeucaugioitinh" id="">
+                                        <option value="1">1</option>
                                     </select>
                                 </div>
                             </div>
                             <div>
                                 <b><p class="font-all"><b>*</b> Yêu cầu công việc</p></b>
-                                <i class="thongbao"></i>
-                                <textarea id="yeucaucongviec" required></textarea> 
+                                <i id="thongbaoyeucaucongviec"></i>
+                                <textarea name="yeucaucongviec" id="yeucaucongviec" onblur="validationyeucaucongviec()" required></textarea> 
                             </div>
                         </div>
                         <div>
                             <h3 class="font-all">Quyền lợi được hưởng <img src="./public/img/Line 37.png" alt=""></h3>
                             <b><p class="font-all"><b>*</b> Quyền lợi được hưởng</p></b>
-                            <i class="thongbao"></i>
-                            <textarea id="quyenloiduochuong" required></textarea>
+                            <i id="thongbaoquyenloiduochuong"></i>
+                            <textarea name="quyenloiduochuong" id="quyenloiduochuong" onblur="valdationquyenloiduochuong()" required></textarea>
                         </div>
                         <div>
                             <h3 class="font-all">Yêu cầu hồ sơ <img src="./public/img/Line 37.png" alt=""></h3>
                             <b><p class="font-all"><b>*</b> Hồ sơ bao gồm</p></b>
-                            <i class="thongbao"></i>
-                            <textarea id="hosobaogom" required></textarea>
+                            <i id="thongbaohosobaogom"></i>
+                            <textarea name="hosobaogom" id="hosobaogom" onblur="validationhosobaogom()" required></textarea>
                             <b><p class="font-all"><b>*</b> Hạn nộp hồ sơ</p></b>
                             <i class="thongbao"></i>
-                            <input id="date" type="date" required>
+                            <input name="hannophoso" onblur="validation()" id="date" type="date" required>
                         </div>
                         <div>
                             <h3 class="font-all">Thông tin liên hệ <img src="./public/img/Line 37.png" alt=""></h3>
                             <div class="flex-big">
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Tên người liên hệ</p></b>
-                                    <i class="thongbao"></i>
-                                    <input type="text" id="tennguoilienhe" required>
+                                    <i id="thongbaotennguoilienhe"></i>
+                                    <input name="tennguoilienhe" onblur="validationtennguoilienhe()" type="text" id="tennguoilienhe" required>
                                     <b><p class="font-all"><b>*</b> Địa chỉ liên hệ</p></b>
-                                    <i class="thongbao"></i>
-                                    <input type="text" id="diachilienhe" required>
+                                    <i id="thongbaodiachilienhe"></i>
+                                    <input name="diachilienhe" onblur="validationdiachilienhe()" type="text" id="diachilienhe" required>
                                 </div>
                                 <div class="line">
                                     <b><p class="font-all"><b>*</b> Số điện thoại liên hệ</p></b>
-                                    <i class="thongbao"></i>
-                                    <input type="text" id="sodienthoailienhe" required>
+                                    <i id="thongbaosodienthoailienhe"></i>
+                                    <input name="sodienthoailienhe" onblur="validationsodienthoailienhe()" type="text" id="sodienthoailienhe">
                                     <b><p class="font-all"><b>*</b> Email liên hệ</p></b>
-                                    <i class="thongbao"></i>
-                                    <input type="text" id="emaillienhe" required>
+                                    <i id="thongbaoemaillienhe"></i>
+                                    <input name="emaillienhe" onblur="validationemaillienhe()" type="email" id="emaillienhe" required>
                                 </div>
                             </div>
                         </div>
@@ -313,6 +314,5 @@
             
         </div>
     </div>
-    <script src="./public/js/main.js"></script>
 </body>
 </html>
